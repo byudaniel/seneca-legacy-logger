@@ -84,7 +84,7 @@ legacy_logging.preload = function () {
         }
         var prior_ctxt = {
           entry: data.entry,
-          chain: data.prior,
+          chain: data.prior || [],
           depth: data.prior && data.prior.length || 0
         }
 
